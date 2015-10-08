@@ -1,0 +1,13 @@
+<div ng-controller="chatcontroller">
+  <h1><i>Just Chat</i></h1>
+  <h5>Nothing more.. Nothing Less</h5>
+  <textarea style="width: 75%; height: 200px" class="form-control floating-label" ng-disabled="true" ng-model="mlog"></textarea><br>
+  <input style="width: 60%" type="text" class="form-control floating-label" placeholder="Type something" ng-model="inpmsg">
+  <button class="btn btn-primary btn-raised" ng-click="sendmess(inpmsg)">Send</button>
+  <h3>Online users</h3>
+  <!--<textarea class="form-control floating-label" ng-model="activeusers"></textarea>-->
+  <ul ng-repeat="user in dispvar">
+    <li>{{ user.activeuser }}</li>
+  </ul>
+</div>
+
